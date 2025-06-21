@@ -1,0 +1,77 @@
+
+@media screen and (min-width: 51rem) {
+    body {
+      padding-block: 0;
+        place-items: center;
+        background-image: url("/bg-pattern-top-desktop.svg"), url("/bg-pattern-bottom-desktop.svg");
+    }
+
+    .intro {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .intro__mainHeading {
+    margin-inline: 0;
+    text-align: left;
+  }
+
+    .intro__mainDescription {
+        max-width: 50ch;
+        text-align: left;
+    }
+
+    .five__star {
+      flex-direction: row;
+      width: max-content;
+    }
+
+    .five__star:nth-child(2) {
+      transform: translateX(15px);
+    }
+  
+    .five__star:nth-child(3) {
+      transform: translateX(30px);
+    }
+
+}
+
+@media screen and (min-width: 64rem) {
+  .intro__mainHeading {
+    font-size: 3rem;
+  }
+
+  .five__star:nth-child(2) {
+    transform: translateX(40px);
+  }
+
+  .five__star:nth-child(3) {
+    transform: translateX(80px);
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  .intro {
+    gap: 5rem;
+  }
+  .intro__mainHeading {
+    font-size: 3.5em;
+  }
+
+  .testimonial__card:nth-child(2) {
+    transform: translateY(2rem);
+  }
+
+  .testimonial__card:nth-child(3) {
+    transform: translateY(4rem);
+  }
+
+  .five__star:nth-child(2) {
+    transform: translateX(75px);
+  }
+
+  .five__star:nth-child(3) {
+    transform: translateX(150px);
+  }
+  
+}

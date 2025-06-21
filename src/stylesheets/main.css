@@ -1,0 +1,114 @@
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--ff);
+  background-color: var(--white);
+  height: 100vh;
+  display: grid;
+  padding-inline: 2rem;
+  padding-block: 4rem;
+  background-image: url("/bg-pattern-top-mobile.svg"),
+    url("/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-size: contain, contain;
+}
+
+main {
+  max-width: 68rem;
+  margin-inline: auto;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.intro__mainHeading {
+  font-size: 2em;
+  text-align: center;
+  width: 12ch;
+  margin-inline: auto;
+  line-height: 90%;
+  font-weight: var(--fw-700);
+  color: var(--veryDarkMagenta);
+}
+
+.intro__mainDescription {
+  text-align: center;
+  padding-top: 1rem;
+  color: var(--darkGrayishMagenta);
+  font-size: var(--fs);
+  font-weight: var(--fw-500);
+}
+
+.intro__ratings {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.five__star {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lightGrayishMagenta);
+    padding: 1rem;
+    border-radius: 0.625rem;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.five__star-icons {
+  display: flex;
+  gap: 0.875rem;
+}
+
+.five__star-description {
+  font-weight: var(--fw-700);
+  color: var(--veryDarkMagenta);
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2em;
+  margin-top: 3rem;
+}
+
+.testimonial__card {
+    background-color: var(--veryDarkMagenta);
+    padding: 2rem;
+    border-radius: 0.625rem;
+}
+
+.testimonial__card-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testimonial__card-profileName {
+    color: var(--white);
+}
+
+.testimonial__card-profileVerified {
+    display: block;
+    line-height: 1;
+    color: var(--softPink);
+}
+
+.testimonial__card-description {
+    color: var(--white);
+    font-size: var(--fs);
+    padding-top: 1.5rem;
+}
+.testimonial__card-profileImg {
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: cover;
+    object-position: center;
+}
