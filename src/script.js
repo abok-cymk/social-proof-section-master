@@ -1,6 +1,7 @@
+
 const fiveStarEl = document.querySelectorAll(".five__star");
 
-const iconUrl = "/social-proof-section-master/icon-star.svg";
+const iconUrl = `/social-proof-section-master/icon-star.svg`;
 
 fiveStarEl.forEach((element) => {
   const iconContainer = document.createElement("div");
